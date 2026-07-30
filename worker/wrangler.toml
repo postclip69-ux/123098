@@ -1,4 +1,4 @@
-name = "webui-xl"
+name = "webui-xl-staging"
 main = "src/index.ts"
 compatibility_date = "2026-06-01"
 compatibility_flags = ["nodejs_compat"]
@@ -60,7 +60,7 @@ bucket_name = "webui-xl-staging-data"
 # Production — deploy: npx wrangler deploy --env production
 # ---------------------------------------------------------------------------
 [env.production]
-name = "webui-xl"
+name = "psx"
 vars = { ENVIRONMENT = "production" }
 
 # Uncomment and set your hostname after adding the domain in Cloudflare dashboard:
@@ -68,8 +68,8 @@ vars = { ENVIRONMENT = "production" }
 
 [[env.production.d1_databases]]
 binding = "DB"
-database_name = "webui-xl"
-database_id = "b16350cf-1dc8-48ff-8a53-affb7346d7d6"
+database_name = "webui-xl-staging"
+database_id = "bc87cdf4-2b9f-4c25-a1a5-7685ed3783f4"
 migrations_dir = "migrations"
 
 [[env.production.r2_buckets]]
