@@ -6,9 +6,8 @@ export interface Env {
   BASIC_AUTH?: string;
   UA?: string;
   API_KEY?: string;
-  AES_KEY_ASCII?: string;
+  CIRCLE_MSISDN_KEY?: string;
   AX_FP_KEY?: string;
-  AX_FP?: string;
   ENCRYPTED_FIELD_KEY?: string;
   XDATA_KEY?: string;
   AX_API_SIG_KEY?: string;
